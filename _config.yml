@@ -1,0 +1,20 @@
+title: Jimmy Diary
+description: Jimmy's personal notes
+baseurl: /jimmy-diary   # must match the GitHub repo name
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+# Every page uses the default layout (which also tells search engines not to index it)
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
